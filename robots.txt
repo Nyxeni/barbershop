@@ -1,0 +1,6 @@
+# Allow all crawlers to index the site.
+User-agent: *
+Allow: /
+
+# Once the production domain is known, uncomment and set the full sitemap URL:
+# Sitemap: https://YOUR-DOMAIN/sitemap.xml

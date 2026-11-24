@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found — Maison Noir</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0a0a">
+  <!-- Root-relative paths: this page may be served for any missing URL, at any depth. -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .notfound { min-height: 100vh; min-height: 100svh; padding-bottom: 4rem; }
+    .notfound .hero-title { font-size: clamp(2.6rem, 9vw, 6.5rem); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Maison Noir home">
+        <span class="brand-mark" aria-hidden="true">MN</span>
+        <span class="brand-name">Maison Noir</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero notfound" aria-labelledby="nf-title">
+      <div class="hero-bg" aria-hidden="true"><div class="hero-lines"></div></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Error 404</p>
+        <h1 id="nf-title" class="hero-title">Page not<br><em>found.</em></h1>
+        <p class="hero-lead">The page you're looking for doesn't exist or has moved.</p>
+        <div class="hero-actions">
+          <a href="/" class="btn btn-light">Back to Home</a>
+          <a href="/#services" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

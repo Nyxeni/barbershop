@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Noir — Gentlemen's Barbershop</title>
+  <meta name="description" content="Maison Noir is a premium gentlemen's barbershop offering precision haircuts, hot towel shaves and beard sculpting. Book your appointment online.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://www.example.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maison Noir — Gentlemen's Barbershop">
+  <meta property="og:description" content="Precision cuts, hot towel shaves and beard sculpting in a refined, timeless setting.">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script>
+    (function (root) {
+      // Enables scroll-reveal styling. Safety net: if script.js fails to load
+      // or run, remove the class so all content stays visible.
+      root.classList.add("js");
+      window.setTimeout(function () {
+        if (!root.classList.contains("js-ready")) root.classList.remove("js");
+      }, 3000);
+    })(document.documentElement);
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without blocking first render (text shows in the fallback font, then swaps).
+       Only the weights the design uses are requested. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap"></noscript>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Maison Noir",
+    "url": "https://www.example.com/",
+    "telephone": "+1-555-010-2040",
+    "email": "hello@example.com",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "120 Mercer Street",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10012",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <!-- Links to "#top" scroll to the top of the page natively (no element may use id="top"). -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Maison Noir home">
+        <span class="brand-mark" aria-hidden="true">MN</span>
+        <span class="brand-name">Maison Noir</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Barbers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button type="button" class="btn btn-light nav-cta" data-open-booking>Book Now</button>
+      </nav>
+
+      <button type="button" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-lines"></div>
+      </div>
+      <img class="hero-photo" src="assets/images/hero.jpg" width="1600" height="1096"
+           alt="Dimly lit luxury barbershop interior with a row of leather barber chairs facing illuminated mirrors"
+           fetchpriority="high" decoding="async">
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Est. 2014 &nbsp;·&nbsp; New York</p>
+        <h1 id="hero-title" class="hero-title reveal">
+          The Art of the<br><em>Perfect Cut.</em>
+        </h1>
+        <p class="hero-lead reveal">
+          Precision grooming for the modern gentleman. Classic technique, considered detail,
+          and an hour that belongs entirely to you.
+        </p>
+        <div class="hero-actions reveal">
+          <button type="button" class="btn btn-light" data-open-booking>Book an Appointment</button>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+      <div class="hero-meta container" aria-hidden="true">
+        <span>Haircuts</span><span class="dot"></span>
+        <span>Hot Towel Shaves</span><span class="dot"></span>
+        <span>Beard Sculpting</span>
+      </div>
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Services &amp; Pricing</p>
+          <h2 id="services-title" class="section-title">Crafted, never rushed.</h2>
+          <p class="section-lead">Every service includes a consultation, hot towel finish and styling with our house products.</p>
+        </header>
+
+        <div class="services-grid">
+          <div class="service-group reveal">
+            <h3 class="service-group-title">Hair</h3>
+            <ul class="price-list">
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Signature Cut</span><span class="price-fill"></span><span class="price-value">$65</span></div>
+                <p class="price-desc">Tailored cut, wash, hot towel and style. 45 min</p>
+              </li>
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Skin Fade</span><span class="price-fill"></span><span class="price-value">$70</span></div>
+                <p class="price-desc">Seamless foil-finish fade with detailed blending. 50 min</p>
+              </li>
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Buzz Cut</span><span class="price-fill"></span><span class="price-value">$40</span></div>
+                <p class="price-desc">Single-guard clipper cut with lined edges. 25 min</p>
+              </li>
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Long Hair &amp; Scissor Cut</span><span class="price-fill"></span><span class="price-value">$80</span></div>
+                <p class="price-desc">Full scissor work for longer, textured styles. 60 min</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-group reveal">
+            <h3 class="service-group-title">Shave &amp; Beard</h3>
+            <ul class="price-list">
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Royal Hot Towel Shave</span><span class="price-fill"></span><span class="price-value">$60</span></div>
+                <p class="price-desc">Straight razor, pre-shave oil, three hot towels and balm. 45 min</p>
+              </li>
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Beard Sculpt</span><span class="price-fill"></span><span class="price-value">$45</span></div>
+                <p class="price-desc">Shape, line-up and razor edge with conditioning oil. 30 min</p>
+              </li>
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">Cut &amp; Beard</span><span class="price-fill"></span><span class="price-value">$100</span></div>
+                <p class="price-desc">Signature cut paired with a full beard sculpt. 75 min</p>
+              </li>
+              <li class="price-item">
+                <div class="price-row"><span class="price-name">The Noir Ritual</span><span class="price-fill"></span><span class="price-value">$145</span></div>
+                <p class="price-desc">Cut, hot towel shave, facial mask and scalp massage. 100 min</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-cta reveal">
+          <button type="button" class="btn btn-dark" data-open-booking>Reserve Your Chair</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-frame">
+            <img src="assets/images/about.jpg" width="1600" height="2000"
+                 alt="Close-up of a barber's tattooed hands using clippers and a comb to fade a client's short haircut"
+                 loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow reveal">About Us</p>
+          <h2 id="about-title" class="section-title reveal">A barbershop in the old tradition, built for today.</h2>
+          <p class="reveal">
+            Maison Noir began with a single chair and a simple belief: a great haircut is a
+            craft, not a transaction. A decade later, we still book generous appointments,
+            sharpen our own razors, and know our clients by name.
+          </p>
+          <p class="reveal">
+            Our space is quiet, considered and unhurried — a place to step away from the city
+            for an hour and leave looking, and feeling, your best.
+          </p>
+          <dl class="stats reveal">
+            <div><dt>Years</dt><dd data-count="10">10</dd></div>
+            <div><dt>Master Barbers</dt><dd data-count="4">4</dd></div>
+            <div><dt>Clients Served</dt><dd data-count="25000" data-suffix="+">25,000+</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section team" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Team</p>
+          <h2 id="team-title" class="section-title">Masters of the chair.</h2>
+        </header>
+
+        <div class="team-grid">
+          <article class="barber reveal">
+            <div class="barber-portrait" data-initials="JM">
+              <img src="assets/images/team-james.jpg" width="1600" height="2000"
+                   alt="Portrait of James Moreau, a bearded barber holding a pair of scissors"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="barber-info">
+              <h3>James Moreau</h3>
+              <p class="barber-role">Founder &amp; Master Barber</p>
+              <p class="barber-bio">Twenty years behind the chair. Known for classic tapers and razor-sharp detail.</p>
+            </div>
+          </article>
+
+          <article class="barber reveal">
+            <div class="barber-portrait" data-initials="DA">
+              <img src="assets/images/team-daniel.jpg" width="1600" height="2400"
+                   alt="Portrait of Daniel Ashford, a barber in glasses and a black T-shirt styling a client's hair"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="barber-info">
+              <h3>Daniel Ashford</h3>
+              <p class="barber-role">Senior Barber</p>
+              <p class="barber-bio">Fade specialist with an eye for modern texture and seamless blends.</p>
+            </div>
+          </article>
+
+          <article class="barber reveal">
+            <div class="barber-portrait" data-initials="LV">
+              <img src="assets/images/team-luca.jpg" width="1600" height="2400"
+                   alt="Portrait of Luca Vitale, a barber dressed in black holding a straight razor"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="barber-info">
+              <h3>Luca Vitale</h3>
+              <p class="barber-role">Shave &amp; Beard Specialist</p>
+              <p class="barber-bio">Trained in Milan. The steadiest straight razor on the East Coast.</p>
+            </div>
+          </article>
+
+          <article class="barber reveal">
+            <div class="barber-portrait" data-initials="MO">
+              <img src="assets/images/team-marcus.jpg" width="1600" height="2400"
+                   alt="Portrait of Marcus Obi, a tattooed barber in a black apron"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="barber-info">
+              <h3>Marcus Obi</h3>
+              <p class="barber-role">Barber &amp; Stylist</p>
+              <p class="barber-bio">Scissor work and longer styles, with a precise, relaxed approach.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title" class="section-title">Recent work.</h2>
+        </header>
+
+        <!-- Gallery photos: Unsplash (unsplash.com), free under the Unsplash License. -->
+        <ul class="gallery-grid">
+          <li class="g-tall"><button type="button" class="gallery-item" data-caption="Textured crop, low skin fade"><img src="assets/images/gallery-1.jpg" width="1600" height="2400" alt="Barber trimming a client's hair with thinning shears and a comb" loading="lazy" decoding="async" data-full="assets/images/gallery-1.jpg"><span class="g-label">Textured Crop</span></button></li>
+          <li><button type="button" class="gallery-item" data-caption="Classic side part with scissor finish"><img src="assets/images/gallery-2.jpg" width="1600" height="2000" alt="Barber cutting a client's hair with scissors and a comb" loading="lazy" decoding="async" data-full="assets/images/gallery-2.jpg"><span class="g-label">Side Part</span></button></li>
+          <li><button type="button" class="gallery-item" data-caption="Full beard sculpt with razor line"><img src="assets/images/gallery-3.jpg" width="1600" height="2409" alt="Black and white photo of a barber trimming a man's beard with scissors" loading="lazy" decoding="async" data-full="assets/images/gallery-3.jpg"><span class="g-label">Beard Sculpt</span></button></li>
+          <li class="g-wide"><button type="button" class="gallery-item" data-caption="The shop floor on Mercer Street"><img src="assets/images/gallery-4.jpg" width="1600" height="1063" alt="Row of black leather barber chairs in front of a brick wall and mirrors" loading="lazy" decoding="async" data-full="assets/images/gallery-4.jpg"><span class="g-label">The Shop</span></button></li>
+          <li><button type="button" class="gallery-item" data-caption="Royal hot towel shave"><img src="assets/images/gallery-5.jpg" width="1600" height="1067" alt="Client reclined in a barber's chair during a shave" loading="lazy" decoding="async" data-full="assets/images/gallery-5.jpg"><span class="g-label">Hot Towel Shave</span></button></li>
+          <li class="g-tall"><button type="button" class="gallery-item" data-caption="Slick back with tapered sides"><img src="assets/images/gallery-6.jpg" width="1600" height="2400" alt="Barber styling a client's combed-back hair with tapered sides" loading="lazy" decoding="async" data-full="assets/images/gallery-6.jpg"><span class="g-label">Slick Back</span></button></li>
+          <li><button type="button" class="gallery-item" data-caption="Mid fade with hard part"><img src="assets/images/gallery-7.jpg" width="1600" height="1067" alt="Barber cutting a fade on a bearded client with clippers" loading="lazy" decoding="async" data-full="assets/images/gallery-7.jpg"><span class="g-label">Mid Fade</span></button></li>
+          <li><button type="button" class="gallery-item" data-caption="Tools of the trade"><img src="assets/images/gallery-8.jpg" width="1600" height="1067" alt="Hair clippers, scissors, a comb and grooming products on a slate board" loading="lazy" decoding="async" data-full="assets/images/gallery-8.jpg"><span class="g-label">The Tools</span></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING BANNER ============ -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-inner reveal">
+        <h2 id="cta-title" class="cta-title">Your chair is waiting.</h2>
+        <button type="button" class="btn btn-light" data-open-booking>Book an Appointment</button>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">Visit Us</p>
+          <h2 id="contact-title" class="section-title">Find the shop.</h2>
+          <p>Walk-ins welcome when chairs allow. Appointments are recommended, especially on weekends.</p>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-card reveal">
+            <h3>Address</h3>
+            <address>
+              120 Mercer Street<br>
+              New York, NY 10012
+            </address>
+            <a class="link-underline" href="https://maps.google.com/?q=120+Mercer+Street+New+York+NY+10012" target="_blank" rel="noopener">Get directions</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Hours</h3>
+            <ul class="hours">
+              <li><span>Mon</span><span>Closed</span></li>
+              <li><span>Tue – Fri</span><span>10:00 – 20:00</span></li>
+              <li><span>Sat</span><span>09:00 – 18:00</span></li>
+              <li><span>Sun</span><span>11:00 – 16:00</span></li>
+            </ul>
+            <p class="open-status" id="open-status" aria-live="polite"></p>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Contact</h3>
+            <p><a class="link-underline" href="tel:+15550102040">+1 (555) 010-2040</a></p>
+            <p><a class="link-underline" href="mailto:hello@example.com">hello@example.com</a></p>
+            <!--
+              Social profiles are inactive until real URLs exist. To activate one, replace its
+              <span class="is-inactive">…</span> with e.g.
+              <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+              and remove the "coming soon" note once all are live.
+            -->
+            <ul class="socials" aria-describedby="socials-note">
+              <li><span class="is-inactive">Instagram</span></li>
+              <li><span class="is-inactive">Facebook</span></li>
+              <li><span class="is-inactive">TikTok</span></li>
+            </ul>
+            <p class="socials-note" id="socials-note">Social profiles coming soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">MN</span>
+        <span class="brand-name">Maison Noir</span>
+      </a>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Maison Noir Barbers. All rights reserved.</p>
+      <a href="#top" class="link-underline">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating mobile booking button -->
+  <button type="button" class="fab-book" data-open-booking aria-label="Book an appointment">Book</button>
+
+  <!-- ============ BOOKING MODAL ============ -->
+  <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close booking form">&times;</button>
+
+      <div class="booking-view" id="booking-form-view">
+        <p class="eyebrow">Reservations</p>
+        <h2 id="booking-title" class="modal-title">Book an Appointment</h2>
+
+        <p class="booking-notice" id="booking-offline-note" hidden>
+          Online booking is not connected yet. You can fill in this form and send it to us
+          by email, or call <a class="link-underline" href="tel:+15550102040">+1 (555) 010-2040</a>.
+        </p>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <div class="field">
+            <label for="b-name">Full name</label>
+            <input id="b-name" name="name" type="text" autocomplete="name" required>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" name="phone" type="tel" autocomplete="tel" required pattern="[0-9+\(\)\-\s]{7,}">
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="b-email">Email</label>
+              <input id="b-email" name="email" type="email" autocomplete="email" required>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="b-service">Service</label>
+              <select id="b-service" name="service" required>
+                <option value="">Select a service</option>
+                <optgroup label="Hair">
+                  <option>Signature Cut — $65</option>
+                  <option>Skin Fade — $70</option>
+                  <option>Buzz Cut — $40</option>
+                  <option>Long Hair &amp; Scissor Cut — $80</option>
+                </optgroup>
+                <optgroup label="Shave &amp; Beard">
+                  <option>Royal Hot Towel Shave — $60</option>
+                  <option>Beard Sculpt — $45</option>
+                  <option>Cut &amp; Beard — $100</option>
+                  <option>The Noir Ritual — $145</option>
+                </optgroup>
+              </select>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="b-barber">Barber</label>
+              <select id="b-barber" name="barber">
+                <option>No preference</option>
+                <option>James Moreau</option>
+                <option>Daniel Ashford</option>
+                <option>Luca Vitale</option>
+                <option>Marcus Obi</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="b-date">Date</label>
+              <input id="b-date" name="date" type="date" required>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="b-time">Time</label>
+              <select id="b-time" name="time" required>
+                <option value="">Select a date first</option>
+              </select>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="b-notes">Notes <span class="optional">(optional)</span></label>
+            <textarea id="b-notes" name="notes" rows="3"></textarea>
+          </div>
+          <!-- Honeypot (spam protection) -->
+          <div class="hp" aria-hidden="true">
+            <label for="b-website">Website</label>
+            <input id="b-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-block" id="booking-submit">Request Booking</button>
+          <p class="form-note">We'll confirm your appointment by email or phone within a few hours.</p>
+          <p class="form-status" id="form-status" role="alert"></p>
+        </form>
+      </div>
+
+      <div class="booking-view booking-success" id="booking-success" hidden>
+        <p class="eyebrow">Request received</p>
+        <h2 class="modal-title" tabindex="-1">Thank you.</h2>
+        <p id="success-summary"></p>
+        <button type="button" class="btn btn-dark" data-close-modal>Done</button>
+      </div>
+
+      <!-- Shown when no booking endpoint is configured: nothing has been submitted. -->
+      <div class="booking-view booking-unsent" id="booking-unsent" hidden>
+        <p class="eyebrow">Not submitted</p>
+        <h2 class="modal-title" tabindex="-1">Your request has not been sent.</h2>
+        <p>
+          Online booking is not connected yet, so we have <strong>not</strong> received this request.
+          To book, send your details to us by email (your request is only received once you send
+          the email) or call the shop.
+        </p>
+        <div class="unsent-actions">
+          <a class="btn btn-dark" id="unsent-email" href="mailto:hello@example.com">Send by Email</a>
+          <a class="btn btn-outline" href="tel:+15550102040">Call the Shop</a>
+        </div>
+        <button type="button" class="link-underline unsent-back" id="unsent-back">← Back to form</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery" aria-describedby="lightbox-help" hidden>
+    <p class="sr-only" id="lightbox-help">Use the left and right arrow keys or swipe to browse. Press Escape to close.</p>
+    <p class="sr-only" id="lightbox-status" aria-live="polite" aria-atomic="true"></p>
+    <button type="button" class="lightbox-close" aria-label="Close gallery">&times;</button>
+    <button type="button" class="lightbox-nav prev" aria-label="Previous image">‹</button>
+    <figure class="lightbox-figure">
+      <div class="lightbox-media"></div>
+      <figcaption>
+        <span class="lightbox-count" aria-hidden="true"></span>
+        <span class="lightbox-caption"></span>
+      </figcaption>
+    </figure>
+    <button type="button" class="lightbox-nav next" aria-label="Next image">›</button>
+  </div>
+
+  <script src="script.js" defer onerror="document.documentElement.classList.remove('js')"></script>
+</body>
+</html>

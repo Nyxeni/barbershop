@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  REPLACE BEFORE LAUNCH: https://www.example.com/ is the same reserved placeholder
+  used by the canonical and Open Graph tags in index.html. Change all of them to the
+  real production domain, then enable the Sitemap line in robots.txt.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.example.com/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+</urlset>
